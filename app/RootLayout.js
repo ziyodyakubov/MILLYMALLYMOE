@@ -1,7 +1,7 @@
 "use client";
 
 import './globals.css';
-import Header from '@/components/Header';
+import Header from '@/components/header';
 
 export const metadata = {
     title: "My Next.js App",
