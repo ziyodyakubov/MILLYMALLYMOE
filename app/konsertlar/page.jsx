@@ -9,8 +9,8 @@ const Concerts = () => {
         document.title = "Konsertlar - Millymallymoe"
     }, [])
     return (
-        <div className="flex justify-center flex-col">
-            <div className="pt-[15%]">
+        <>
+            <div className="pt-[250px]">
                 <h1 className="text-[#ffffffca] text-[16px] lg:text-[20px] text-center">HOZIRCHA KONSERTLAR YO`Q</h1>
             </div>
 
@@ -39,7 +39,7 @@ const Concerts = () => {
 
                 <h1 className="flex font-[300] lg:text-[16px] text-[12px] text-[#EDEBE8] lg:pt-[140px] pt-[60px] justify-center items-center gap-[5px]">© 2025 MILLYMALLYMOE - <a target="_blank" className="hover:underline duration-250 transition-all" href="https://taplink.cc/ijodagency?fbclid=PAZXh0bgNhZW0CMTEAAaZXUMCsQV5N2asxU3A7NXH1-ni5O-9VkKgK_kGtxwteQRXc7UdpSruiR5s_aem_GEl-oOs9DjyhmRFLJadgag">IJOD AGENCY</a></h1>
             </footer>
-        </div>
+        </>
     );
 };
 
