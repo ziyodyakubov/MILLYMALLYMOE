@@ -70,7 +70,7 @@ const Header = () => {
                             <X size={32} />
                         </button>
                     </div>
-                    <ul className="space-y-4 py-[25px] text-lg">
+                    <ul className="space-y-4 mt-[20px] py-[25px] text-lg">
                         <li className="hover:underline duration-250 transition-all">
                             <a href="/">BOSH SAHIFA</a>
                         </li>
