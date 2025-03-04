@@ -1,101 +1,103 @@
+"use client";
+
+import "./globals.css";
+import {YandexMusic, AppleMusic, Insta, YouTube, Telegram, Spotify} from "@/svg";
+import {MillymallymoeDesktop} from "@/jpg";
+import {Millymallymoe} from "@/png";
 import Image from "next/image";
+import { useEffect } from "react";
 
-export default function Home() {
+
+const Layout = () => {
+  useEffect(() => {
+          document.title = "Bosh sahifa - Millymallymoe"
+      }, [])
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <div className="flex flex-col justify-between">
+        <div className="bg-main">
+          <Image className ="lg:block hidden" src={Millymallymoe} alt="millymallymoe" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <Image className="lg:hidden block" src={MillymallymoeDesktop} alt="millymallymoe desktop" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="h-[370px] lg:flex hidden flex-col items-center justify-center bg-[#70372A]">
+          <div className="grid grid-cols-[auto_1px_auto_1px_auto_1px_auto_1px_auto_1px_auto] pb-[150px] items-center gap-[50px]">
+            <a href="https://music.yandex.ru/artist/10747621?utm_medium=copy_link" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+              <Image className="w-[95px] rounded-[10px] relative left-[40px]" src={YandexMusic} alt="Yandex Music" />
+            </a>
+            <div className="w-[1px] h-[130px] ml-[40px] bg-[#8A8A8A]"></div>
+
+            <a href="https://music.apple.com/uz/artist/shokir/1549932788" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+              <Image className="w-[125px] relative left-[25px]" src={AppleMusic} alt="Apple Music" />
+            </a>
+            <div className="w-[1px] ml-[15px] h-[130px] bg-[#8A8A8A]"></div>
+
+            <a href="https://open.spotify.com/artist/3sxuSPGJrQXReGDnPAc9ST?si=4FdJWWNdTceeUNKG8tClQg&nd=1&dlsi=4fcfc5f6663548ba" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+              <Image className="w-[140px]" src={Spotify} alt="Spotify" />
+            </a>
+            <div className="w-[1px] h-[130px] ml-[-20px] bg-[#8A8A8A]"></div>
+
+            <a href="https://www.instagram.com/millymallymoe" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+              <Image className="w-[100px] relative right-[15px]" src={Insta} alt="Instagram" />
+            </a>
+            <div className="w-[1px] h-[130px] ml-[-15px] bg-[#8A8A8A]"></div>
+
+            <a href="https://t.me/therealmilly" className="grayscale-[60%] hover:brightness-100 hover:grayscale-[0%]" target="_blank">
+              <Image className="w-[100px] relative right-[15px]" src={Telegram} alt="Telegram" />
+            </a>
+            <div className="w-[1px] h-[130px] ml-[-15px] bg-[#8A8A8A]"></div>
+
+            <a href="https://www.youtube.com/c/MILLYMALLYMOE" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+              <Image className="w-[105px] relative right-[10px]" src={YouTube} alt="YouTube" />
+            </a>
+          </div>
+
+          <div className="flex font-[300] text-[16px] text-[#EDEBE8] items-center gap-[5px]">
+            <h1>© 2025 MILLYMALLYMOE - <a className="hover:underline duration-250 transition-all" target="_blank" href="https://taplink.cc/ijodagency?fbclid=PAZXh0bgNhZW0CMTEAAaZXUMCsQV5N2asxU3A7NXH1-ni5O-9VkKgK_kGtxwteQRXc7UdpSruiR5s_aem_GEl-oOs9DjyhmRFLJadgag">IJOD AGENCY</a></h1>
+          </div>
+        </div>
+
+        <div className="h-[570px] lg:hidden flex flex-col items-center px-[20px] justify-center bg-[#70372A]">
+          <div className="lg:pb-[150px] pb-[100px] px-[10px] justify-center flex-col flex items-center gap-[25px]">
+            <div className="flex gap-[70px] pl-[0px] items-center">
+              <a href="https://music.yandex.ru/artist/10747621?utm_medium=copy_link" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+                <Image className="lg:w-[95px] w-[80px] rounded-[10px] relative" src={YandexMusic} alt="Yandex Music" />
+              </a>
+
+              <a href="https://music.apple.com/uz/artist/shokir/1549932788" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+                <Image className="lg:w-[125px] w-[105px] relative" src={AppleMusic} alt="Apple Music" />
+              </a>
+            </div>
+
+            <div className="flex gap-[60px] items-center pr-[25px]">
+              <a href="https://open.spotify.com/artist/3sxuSPGJrQXReGDnPAc9ST?si=4FdJWWNdTceeUNKG8tClQg&nd=1&dlsi=4fcfc5f6663548ba" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+                <Image className="lg:w-[140px] w-[120px]" src={Spotify} alt="Spotify" />
+              </a>
+
+              <a href="https://www.instagram.com/millymallymoe" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+                <Image className="lg:w-[100px] w-[80px] relative lg:right-[15px]" src={Insta} alt="Instagram" />
+              </a>
+            </div>
+
+            <div className="flex gap-[75px] items-center">
+              <a href="https://t.me/therealmilly" className="grayscale-[60%] hover:brightness-100 hover:grayscale-[0%]" target="_blank">
+                <Image className="lg:w-[100px] w-[85px] relative lg:right-[15px]" src={Telegram} alt="Telegram" />
+              </a>
+
+              <a href="https://www.youtube.com/c/MILLYMALLYMOE" className="grayscale-[60%] brightness-100 hover:grayscale-[0%]" target="_blank">
+                <Image className="lg:w-[105px] w-[90px] relative lg:right-[10px]" src={YouTube} alt="YouTube" />
+              </a>
+            </div>
+          </div>
+
+          <div className="flex font-[300] lg:text-[16px] text-[12px] text-[#EDEBE8] items-center gap-[5px]">
+            <h1>© {new Date().getFullYear()} MILLYMALLYMOE - <a className="hover:underline duration-250 transition-all" target="_blank" href="https://taplink.cc/ijodagency?fbclid=PAZXh0bgNhZW0CMTEAAaZXUMCsQV5N2asxU3A7NXH1-ni5O-9VkKgK_kGtxwteQRXc7UdpSruiR5s_aem_GEl-oOs9DjyhmRFLJadgag">IJOD AGENCY</a></h1>
+          </div>
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default Layout;
