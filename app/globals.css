@@ -19,6 +19,10 @@ iframe {
   overflow: hidden;
 }
 
+.nimadir{
+  overflow:hidden;
+}
+
 body, html {
     margin: 0;
     padding: 0;
