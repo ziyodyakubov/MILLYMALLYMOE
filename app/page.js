@@ -2,8 +2,7 @@
 
 import "./globals.css";
 import {YandexMusic, AppleMusic, Insta, YouTube, Telegram, Spotify} from "@/svg";
-import {MillymallymoeDesktop} from "@/jpg";
-import {Millymallymoe} from "@/png";
+import {Millymallymoe, MillymallymoeDesktop} from "@/png";
 import Image from "next/image";
 import { useEffect } from "react";
 
