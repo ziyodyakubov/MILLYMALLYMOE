@@ -12,7 +12,7 @@ const News = () => {
         <>
             <main className="flex flex-col justify-center items-center pt-[30px]">
                 <iframe
-                    className="rounded-[12px] mb-[30px] w-[370px] lg:w-[1280px] h-[720px]"
+                    className="rounded-[12px] mb-[30px] w-[370px] lg:w-[1280px] h-[730px]"
                     src="https://open.spotify.com/embed/artist/3sxuSPGJrQXReGDnPAc9ST?utm_source=generator&theme=0"
                     frameBorder="0"
                     allowFullScreen
@@ -21,7 +21,7 @@ const News = () => {
                 </iframe>
 
                 <iframe
-                    className="lg:w-[1280px] w-[370px] h-[220px] rounded-[12px] lg:h-[800px]"
+                    className="lg:w-[1280px] w-[370px] h-[230px] rounded-[12px] lg:h-[800px]"
                     src="https://www.youtube.com/embed/HNiRbPgsTBQ?si=Lm1ht8LULngTgJH9"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -10,8 +10,8 @@ const Concerts = () => {
     }, [])
     return (
         <>
-            <div className="pt-[200px]">
-                <h1 className="text-[#ffffffca]  text-[16px] lg:text-[20px] text-center">HOZIRCHA KONSERTLAR YO`Q</h1>
+            <div className="pt-[15%] max-h-4">
+                <h1 className="text-[#ffffffca] text-[16px] lg:text-[20px] text-center">HOZIRCHA KONSERTLAR YO`Q</h1>
             </div>
 
             <footer className="lg:pt-[40px] pt-[60px] pb-[20px] mt-[230px] border-t-[1px] border-t-[#ffffff3e] px-[20px] lg:px-[70px]">

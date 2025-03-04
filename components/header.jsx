@@ -65,12 +65,12 @@ const Header = () => {
                 >
 
                     <div className="flex items-center justify-between">
-                        <Image src={MainLogo} className="w-[150px]" alt="Mainlogo" />
+                        <a href="#"><Image src={MainLogo} className="w-[150px]" alt="Mainlogo" /></a>
                         <button onClick={() => setIsOpen(false)}>
                             <X size={32} />
                         </button>
                     </div>
-                    <ul className="mt-10 space-y-4 py-[25px] text-lg">
+                    <ul className="space-y-4 py-[25px] text-lg">
                         <li className="hover:underline duration-250 transition-all">
                             <a href="/">BOSH SAHIFA</a>
                         </li>
