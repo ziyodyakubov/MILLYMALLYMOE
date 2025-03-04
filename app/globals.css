@@ -12,6 +12,13 @@
     scroll-behavior: smooth;
 }
 
+iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 body, html {
     margin: 0;
     padding: 0;

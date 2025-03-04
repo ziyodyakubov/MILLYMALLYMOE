@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const Layout = () => {
   useEffect(() => {
-          document.title = "Bosh sahifa - Millymallymoe"
+          document.title = "Bosh Sahifa - Millymallymoe"
       }, [])
   return (
     <>

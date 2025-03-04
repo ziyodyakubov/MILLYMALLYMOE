@@ -15,8 +15,7 @@ const News = () => {
                     className="rounded-[12px] mb-[30px] w-[370px] lg:w-[1280px] h-[720px]"
                     src="https://open.spotify.com/embed/artist/3sxuSPGJrQXReGDnPAc9ST?utm_source=generator&theme=0"
                     frameBorder="0"
-                    allowFullScreen
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    allow="encrypted-media"
                     loading="lazy">
                 </iframe>
 
