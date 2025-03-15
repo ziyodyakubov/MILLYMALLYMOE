@@ -1,4 +1,4 @@
-import Millymallymoe from "./millymallymoe-final.png";
-import MillymallymoeDesktop from "./millymallymoe-desktop-2.png";
+import Millymallymoe from "./millymallymoe-final-last.png";
+import MillymallymoeDesktop from "./millymallymoe-phone.png";
 
 export {Millymallymoe, MillymallymoeDesktop}

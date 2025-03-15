@@ -19,7 +19,7 @@ const Biographic = () => {
                             <h1 className="lg:text-[42px] text-[25px] font-[800] ">MILLYMALLYMOE</h1>
                             <br></br>
 
-                            <p className="lg:text-[19px] text-[16px] text-[#ffffffbb] font-[300]">Millymallymoe (Shokir Shukurbayev) 1994-yilda Toshkent shahrida tug‘ilgan. U yoshligidan musiqaga qiziqib, 12-13 yoshlarida rep yo‘nalishiga kirib kelgan. Dastlab, rus tilida qo‘shiqlar yozib, o‘z uslubini shakllantirishga harakat qilgan.
+                            <p className="lg:text-[19px] text-[16px] text-[#ffffffbb] font-[300]">Millymallymoe (Shokir Shukurbayev) 1994-yil,  20-may kuni Toshkent shahrida tug‘ilgan. U yoshligidan musiqaga qiziqib, 12-13 yoshlarida rep yo‘nalishiga kirib kelgan. Dastlab, rus tilida qo‘shiqlar yozib, o‘z uslubini shakllantirishga harakat qilgan.
                                 <br></br>
                                 <br></br>
 

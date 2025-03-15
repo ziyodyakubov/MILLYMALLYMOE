@@ -25,9 +25,9 @@ const Contacts = () => {
                                 <div className="flex flex-col gap-[30px]">
                                     <h1 className="lg:text-[20px] text-[16px] font-[800]">MILLYMALLYMOE</h1>
 
-                                    <h2>millymallymoe@icloud.com</h2>
+                                    <h2 className="cursor-pointer">millymallymoe@icloud.com</h2>
 
-                                    <a href="tel:+998994446667" className="block">+998 99 444 66 67</a>
+                                    <a href="tel:+998994446667" className="block">+998 90 358 52 25</a>
                                 </div>
 
                                 <div className="flex lg:pl-[140px] pl-[0px] items-center gap-[25px] lg:gap-[35px]">
